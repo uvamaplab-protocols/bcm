@@ -14,7 +14,16 @@
           }
         },
         {
-          "type": "goals"
+          "type": "devices",
+          "summary": [
+            {
+              "device_id": "device_1",
+              "text": "WisePill",
+              "icon": {
+                "url": "/assets/wisepill.png"
+              }
+            }
+          ]
         },
         {
           "type": "survey",
