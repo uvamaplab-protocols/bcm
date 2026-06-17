@@ -111,48 +111,21 @@
       "period": "00:02:00"
     }
   },
-  "devices": [
-    {
+  "devices": {
+    "device_1": {
       "type": "WisePill",
-      "channel": "Webhook",
-      "goals": [
-        {
-          "id": "wisepill_goal",
-          "type": "binarypercentage",
-          "field": "event",
-          "days": 7,
-          "bounds": [
-            {
-              "lower-bound": -1,
-              "upper-bound": 0,
-              "text": "💡 Sometimes remembering is the hardest part. Try setting a daily reminder to help make it easier.",
-              "summary": "Low Adherence",
-              "color": "#ff9187"
-            },
-            {
-              "lower-bound": 0,
-              "upper-bound": 0.6,
-              "text": "🌞 A new week means a fresh start—this is your chance to get back on track with taking your medicine!",
-              "summary": "Low Adherence",
-              "color": "#ff9187"
-            },
-            {
-              "lower-bound": 0.6,
-              "upper-bound": 0.79,
-              "text": "🎉 Nice work! You’re on your way—just a little more consistency will get you to the top.",
-              "summary": "Moderate Adherence",
-              "color": "#F5E050"
-            },
-            {
-              "lower-bound": 0.79,
-              "upper-bound": 1,
-              "text": "🎉 Great job! You’ve been very consistent with your medicine this week—keep it up! Every dose helps protect your health.",
-              "summary": "High Adherence",
-              "color": "#65bf65"
-            }
-          ]
-        }
-      ]
+      "connect_title": "Enter imei number",
+      "connect_description": "Enter imei number of your WisePill box to connect. This will allow us to track when you take your medication and send you reminders if you forget."
     }
-  ]
+  },
+  "goals": {
+    "goal_1": {
+      "device_id": "device_1",
+      "data_type": "delta-read",
+      "type": "percentage",
+      "field": "event",
+      "required_days": 7,
+      "target_value": 1
+    }
+  }
 }
