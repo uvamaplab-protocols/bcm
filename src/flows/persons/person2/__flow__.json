@@ -1,6 +1,7 @@
 {
-    "restore_elements": true,
     "history_config": {
         "save_count": -1
-    }
+    },
+    "restore_elements": true,
+    "pretty_name": "Person 2"
 }
