@@ -126,7 +126,7 @@
       "device_id": "device_1",
       "data_type": "datums",
       "type": "percentage",
-      "field": "event",
+      "field": "events",
       "required_days": 7,
       "target_value": 1
     }
