@@ -6,7 +6,7 @@
       "elements": [
         {
           "type": "alert",
-          "title": "MyMedSupport!",
+          "title": "MyMedSupport",
           "message": "Your personalized partner",
           "icon": {
             "url": "/assets/diagnosis.png",
@@ -33,48 +33,42 @@
           }
         },
         {
-          "type": "reports",
+          "type": "sublist",
           "title": "Your routine",
-          "icon": {
+           "icon": {
             "url": "/assets/adherence.png",
             "tint": false
           },
-          "text": "View Routine",
-          "reports": [
+          "actions": [
             {
-              "title": "Set your daily routine",
-              "action": "flow://flows/adherance/routine",
-              "report": true
+              "text": "Set your daily routine",
+              "action": "flow://flows/adherance/routine"
             }
           ]
         },
-        {
-          "type": "reports",
+         {
+          "type": "sublist",
           "title": "Your social support",
-          "icon": {
+           "icon": {
             "url": "/assets/hands.png",
             "tint": false
           },
-          "text": "View support",
-          "reports": [
+          "actions": [
             {
-              "title": "Learn how to set your social support",
+              "text": "Learn how to set your social support",
               "action": "flow://flows/support"
             },
             {
-              "title": "${global:person1name,Person 1}",
-              "action": "flow://flows/persons/person1",
-              "report": true
+              "text": "${global:person1name,Person 1}",
+              "action": "flow://flows/persons/person1"
             },
             {
-              "title": "${global:person2name,Person 2}",
-              "action": "flow://flows/persons/person2",
-              "report": true
+              "text": "${global:person2name,Person 2}",
+              "action": "flow://flows/persons/person2"
             },
             {
-              "title": "${global:person3name,Person 3}",
-              "action": "flow://flows/persons/person3",
-              "report": true
+              "text": "${global:person3name,Person 3}",
+              "action": "flow://flows/persons/person3"
             }
           ]
         },
