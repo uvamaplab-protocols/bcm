@@ -1,4 +1,5 @@
 {
     "restore_elements": true,
+    "restore_mode": "OnFlowCompletion",
     "pretty_name": "Your Routine"
 }

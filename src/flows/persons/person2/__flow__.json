@@ -3,5 +3,6 @@
         "save_count": -1
     },
     "restore_elements": true,
+    "restore_mode": "OnFlowCompletion",
     "pretty_name": "Person 2"
 }
