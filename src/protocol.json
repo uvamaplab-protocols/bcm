@@ -14,16 +14,9 @@
           }
         },
         {
-          "type": "devices",
-          "summary": [
-            {
-              "device_id": "device_1",
-              "text": "WisePill",
-              "icon": {
-                "url": "/assets/wisepill.png"
-              }
-            }
-          ]
+          "type": "wisepill",
+          "connection_id": "connection_1",
+          "goal_id": "goal_1"
         },
         {
           "type": "survey",
@@ -114,21 +107,20 @@
       "period": "00:02:00"
     }
   },
-  "devices": {
-    "device_1": {
-      "type": "WisePill",
-      "connect_title": "Enter imei number",
-      "connect_description": "Enter imei number of your WisePill box to connect. This will allow us to track when you take your medication and send you reminders if you forget."
+  "connections": {
+    "connection_1": {
+      "type": "WisePill"
     }
   },
   "goals": {
     "goal_1": {
-      "device_id": "device_1",
+      "connection_id": "connection_1",
       "data_type": "datums",
       "type": "percentage",
       "field": "events",
       "required_days": 7,
-      "target_value": 1
+      "target_value": 1,
+      "name": "Pills Adherence"
     }
   }
 }
